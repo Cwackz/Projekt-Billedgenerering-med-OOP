@@ -3,6 +3,11 @@
 
 Formålet med dette projekt er at udnytte mulighederne i Pillow-librariet til at generere grafik med forskellige farver og former. Det overordnede mål er at uddybe vores forståelse af objektorienteret programmering (OOP) og forbedre vores færdigheder i at bruge Python-libraries effektivt. 
 
+## Demo
+
+[Live Demo](https://projekt-billedgenerering-med-oop.streamlit.app/)
+
+
 ## Features
 
 - Light/dark mode toggle
