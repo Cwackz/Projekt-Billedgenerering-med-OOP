@@ -5,8 +5,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "README.md",
-        "Streamlit Projekt.py"
+        "Streamlit-Projekt.py"
       ]
     },
     "vscode": {
@@ -19,7 +18,7 @@
   },
   "updateContentCommand": "[ -f packages.txt ] && sudo apt update && sudo apt upgrade -y && sudo xargs apt install -y <packages.txt; [ -f requirements.txt ] && pip3 install --user -r requirements.txt; pip3 install --user streamlit; echo '✅ Packages installed and Requirements met'",
   "postAttachCommand": {
-    "server": "streamlit run Streamlit Projekt.py --server.enableCORS false --server.enableXsrfProtection false"
+    "server": "streamlit run Streamlit-Projekt.py --server.enableCORS false --server.enableXsrfProtection false"
   },
   "portsAttributes": {
     "8501": {
