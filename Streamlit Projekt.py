@@ -1,15 +1,11 @@
 import streamlit as st
 from PIL import Image, ImageDraw
-
-class Shape:
+class _Shape:
     def __init__(self, position, color):
         self.position = position
         self.color = color
 
-    def draw(self, image):
-        pass
-
-class Circle(Shape):
+class Circle(_Shape):
     def __init__(self, radius, position, color):
         super().__init__(position, color)
         self.radius = radius
@@ -22,7 +18,7 @@ class Circle(Shape):
         ]
         draw.ellipse(bounding_box, fill=self.color)
 
-class Rectangle(Shape):
+class Rectangle(_Shape):
     def __init__(self, width, height, position, color):
         super().__init__(position, color)
         self.width = width
@@ -35,7 +31,7 @@ class Rectangle(Shape):
             (self.position[0] + self.width, self.position[1] + self.height)
         ], fill=self.color)
 
-class Triangle(Shape):
+class Triangle(_Shape):
     def __init__(self, base, height, position, color):
         super().__init__(position, color)
         self.base = base
@@ -50,7 +46,7 @@ class Triangle(Shape):
             apex
         ], fill=self.color)
 
-class Octagon(Shape):
+class Octagon(_Shape):
     def __init__(self, side, position, color):
         super().__init__(position, color)
         self.side = side
@@ -109,6 +105,7 @@ def main():
     if st.button('Gem billede'):
         image.save("OOPBilledeTingeling.png")
         st.success("Billedet er gemt!")
+        
 
 if __name__ == "__main__":
     main()
