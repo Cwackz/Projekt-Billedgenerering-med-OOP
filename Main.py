@@ -106,6 +106,5 @@ def main():
         image.save("OOPBilledeTingeling.png")
         st.success("Billedet er gemt!")
         
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
